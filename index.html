@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jacq Alencar | Confeitaria Artesanal</title>
+    <meta name="description" content="Doces feitos com carinho para surpreender quem você ama. Bento Cake, Festa na Caixa e muito mais.">
+    
+    <!-- Google Fonts: Playfair Display (Elegant/Headings) & Inter (Clean/Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#fce7f3',  /* Darkened from #fdf2f8 to make it more vivid */
+                100: '#fbcfe8', /* Darkened from #fce7f3 */
+                200: '#f9a8d4', /* Darkened from #fbcfe8 */
+                300: '#f472b6',
+                400: '#ec4899',
+                500: '#db2777',
+                600: '#be185d', /* Slightly darker primary for better contrast */
+                800: '#9d174d',
+                900: '#831843',
+              },
+              whatsapp: '#25D366',
+              whatsappHover: '#128C7E'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Hide scrollbar for gallery but keep functionality */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-50 text-gray-800 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
